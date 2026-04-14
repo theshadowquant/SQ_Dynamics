@@ -20,11 +20,11 @@ export default function FinalCTA() {
                 ✉️ shadowquantdynamics@gmail.com
               </a>
               <div style={{ display: "flex", gap: 16, flexWrap: "wrap", justifyContent: "center" }}>
-                <a href="https://wa.me/917676309842" target="_blank" rel="noopener noreferrer" className="btn-glow"
+                <a href="https://wa.me/917676309842?text=Hi%20ShadowQuant%20team!%20I'd%20like%20to%20discuss%20building%20a%20premium%20digital%20system%20for%20my%20business." target="_blank" rel="noopener noreferrer" className="btn-glow"
                    style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "16px 24px", borderRadius: 8, background: "rgba(37,99,235,0.1)", color: "#fff", fontWeight: 600, fontSize: 16, textDecoration: "none", border: "1px solid rgba(59,130,246,0.3)" }}>
                   📞 +91 76763 09842 (Lekhan)
                 </a>
-                <a href="https://wa.me/918904545195" target="_blank" rel="noopener noreferrer" className="btn-glow"
+                <a href="https://wa.me/918904545195?text=Hi%20ShadowQuant%20team!%20I'd%20like%20to%20discuss%20building%20a%20premium%20digital%20system%20for%20my%20business." target="_blank" rel="noopener noreferrer" className="btn-glow"
                    style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "16px 24px", borderRadius: 8, background: "rgba(37,99,235,0.1)", color: "#fff", fontWeight: 600, fontSize: 16, textDecoration: "none", border: "1px solid rgba(59,130,246,0.3)" }}>
                   📞 +91 89045 45195 (Varun)
                 </a>
