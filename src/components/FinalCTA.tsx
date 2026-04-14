@@ -12,14 +12,23 @@ export default function FinalCTA() {
               Every Day You Wait Is Revenue You're <span className="text-gradient">Handing to a Competitor.</span>
             </h2>
             <p style={{ fontSize: 20, color: "#D1D5DB", marginBottom: 40, maxWidth: 600, margin: "0 auto 40px", lineHeight: 1.7, fontWeight: 300 }}>
-              Businesses that invest in high-performance digital systems consistently outgrow those that don't. The question isn't whether you can afford to work with us — it's whether you can afford not to.
+              The question isn't whether you can afford to work with us — it's whether you can afford not to. Reach out below.
             </p>
-            <a href="#" className="btn-glow"
-               style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "20px 40px", borderRadius: 8, background: "#0B0B0F", color: "#fff", fontWeight: 700, fontSize: 20, textDecoration: "none", border: "1px solid rgba(255,255,255,0.1)", marginBottom: 24 }}>
-              Claim Your Spot →
-            </a>
-            <div style={{ fontSize: 12, fontWeight: 700, color: "#F87171", textTransform: "uppercase", letterSpacing: 3 }}>
-              We take on 3 new projects per month. Spots fill fast.
+            <div style={{ display: "flex", flexDirection: "column", gap: 16, alignItems: "center", marginBottom: 32 }}>
+              <a href="mailto:shadowquantdynamics@gmail.com" className="btn-glow"
+                 style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "20px 40px", borderRadius: 8, background: "#0B0B0F", color: "#fff", fontWeight: 700, fontSize: 18, textDecoration: "none", border: "1px solid rgba(255,255,255,0.1)" }}>
+                ✉️ shadowquantdynamics@gmail.com
+              </a>
+              <div style={{ display: "flex", gap: 16, flexWrap: "wrap", justifyContent: "center" }}>
+                <a href="https://wa.me/917676309842" target="_blank" rel="noopener noreferrer" className="btn-glow"
+                   style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "16px 24px", borderRadius: 8, background: "rgba(37,99,235,0.1)", color: "#fff", fontWeight: 600, fontSize: 16, textDecoration: "none", border: "1px solid rgba(59,130,246,0.3)" }}>
+                  📞 +91 76763 09842 (Lekhan)
+                </a>
+                <a href="https://wa.me/918904545195" target="_blank" rel="noopener noreferrer" className="btn-glow"
+                   style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "16px 24px", borderRadius: 8, background: "rgba(37,99,235,0.1)", color: "#fff", fontWeight: 600, fontSize: 16, textDecoration: "none", border: "1px solid rgba(59,130,246,0.3)" }}>
+                  📞 +91 89045 45195 (Varun)
+                </a>
+              </div>
             </div>
           </div>
         </motion.div>
