@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 
 const team = [
-  { name: "LEKHAN V T", role: "Founder", desc: "The architect behind systems that scale. 5+ years turning complex problems into growth engines." },
-  { name: "S M VARUN", role: "Co-Founder", desc: "Performance engineer. Every product we ship is optimized for speed, conversion, and retention." },
-  { name: "DARSHAN MAHAVEER MANG", role: "Co-Founder", desc: "Automation-first thinker. He finds the leak in your operations before you know it exists." },
+  { name: "LEKHAN V T", role: "Founder", desc: "Highly trained engineering student. The architect behind our digital systems, turning complex problems into scalable code." },
+  { name: "S M VARUN", role: "Co-Founder", desc: "Skilled engineering student and performance obsessive. He ensures every product we ship is incredibly fast and optimized." },
+  { name: "DARSHAN MAHAVEER MANG", role: "Co-Founder", desc: "Highly skilled engineering student. An automation-first thinker who eliminates operational bottlenecks with pure logic." },
 ];
 
 export default function Team() {
