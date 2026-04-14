@@ -8,8 +8,8 @@ const team = [
 
 export default function Team() {
   return (
-    <section id="team" style={{ padding: "96px 0", position: "relative", zIndex: 10 }}>
-      <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 48px" }}>
+    <section id="team" style={{ padding: "clamp(64px, 10vw, 96px) 0", position: "relative", zIndex: 10 }}>
+      <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 clamp(20px, 5vw, 48px)" }}>
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} style={{ marginBottom: 64, textAlign: "center" }}>
           <h2 style={{ fontSize: "clamp(32px, 4vw, 48px)", fontWeight: 700, fontFamily: "'Space Grotesk', sans-serif", marginBottom: 16 }}>The Operatives.</h2>
           <div style={{ width: 80, height: 4, background: "linear-gradient(to right, #3B82F6, #8B5CF6)", borderRadius: 2, margin: "0 auto" }} />

@@ -9,10 +9,10 @@ const CallIcon = () => (
 );
 export default function FinalCTA() {
   return (
-    <section id="contact" style={{ padding: "128px 0", position: "relative", zIndex: 10 }}>
-      <div style={{ maxWidth: 900, margin: "0 auto", padding: "0 48px", textAlign: "center" }}>
+    <section id="contact" style={{ padding: "clamp(80px, 12vw, 128px) 0", position: "relative", zIndex: 10 }}>
+      <div style={{ maxWidth: 900, margin: "0 auto", padding: "0 clamp(20px, 5vw, 48px)", textAlign: "center" }}>
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}
-          className="glass-panel" style={{ padding: "64px 48px", borderRadius: 24, position: "relative", overflow: "hidden" }}>
+          className="glass-panel" style={{ padding: "clamp(32px, 8vw, 64px) clamp(24px, 5vw, 48px)", borderRadius: 24, position: "relative", overflow: "hidden" }}>
           <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%,-50%)", width: "100%", maxWidth: 400, height: 300, background: "linear-gradient(to right, rgba(37,99,235,0.2), rgba(124,58,237,0.2))", filter: "blur(80px)", borderRadius: "50%", zIndex: 0 }} />
           <div style={{ position: "relative", zIndex: 1 }}>
             <h2 style={{ fontSize: "clamp(28px, 4vw, 46px)", fontWeight: 700, fontFamily: "'Space Grotesk', sans-serif", lineHeight: 1.2, marginBottom: 24 }}>

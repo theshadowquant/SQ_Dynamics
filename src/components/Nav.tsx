@@ -20,11 +20,11 @@ export default function Nav() {
         ...(scrolled ? { background: "rgba(11,11,15,0.8)", backdropFilter: "blur(12px)", padding: "12px 0" } : { background: "transparent", padding: "20px 0" })
       }}
     >
-      <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 48px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+      <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 clamp(20px, 5vw, 48px)", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
         <a href="#" style={{ fontSize: 20, fontWeight: 700, fontFamily: "'Space Grotesk', sans-serif", textDecoration: "none", color: "#fff" }}>
           ShadowQuant <span style={{ color: "#3B82F6" }}>Dynamics</span>
         </a>
-        <div style={{ display: "flex", gap: 32, fontSize: 14, fontWeight: 500, color: "#9CA3AF" }}>
+        <div className="nav-links" style={{ display: "flex", gap: 32, fontSize: 14, fontWeight: 500, color: "#9CA3AF" }}>
           {["Services", "Work", "Team", "Contact"].map(link => (
             <a key={link} href={`#${link.toLowerCase()}`} style={{ textDecoration: "none", color: "inherit", transition: "color 0.2s" }}
                onMouseEnter={e => (e.currentTarget.style.color = "#fff")}
@@ -32,7 +32,7 @@ export default function Nav() {
           ))}
         </div>
         <a href="#contact" className="btn-glow"
-           style={{ padding: "10px 24px", borderRadius: 6, background: "#0B0B0F", color: "#fff", fontWeight: 600, fontSize: 14, textDecoration: "none", border: "1px solid rgba(255,255,255,0.1)" }}>
+           style={{ padding: "10px 24px", borderRadius: 6, background: "#0B0B0F", color: "#fff", fontWeight: 600, fontSize: 14, textDecoration: "none", border: "1px solid rgba(255,255,255,0.1)", whiteSpace: "nowrap" }}>
           Start a Project
         </a>
       </div>

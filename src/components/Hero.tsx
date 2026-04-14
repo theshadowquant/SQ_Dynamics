@@ -15,7 +15,7 @@ export default function Hero() {
       <motion.div animate={{ y: [0,40,0], opacity: [0.2,0.5,0.2] }} transition={{ duration: 7, repeat: Infinity, ease: "easeInOut", delay: 1 }}
         style={{ position: "absolute", bottom: "33%", right: "25%", width: 192, height: 192, borderRadius: "50%", background: "#8B5CF6", filter: "blur(40px)", opacity: 0.2 }} />
 
-      <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 48px", position: "relative", zIndex: 10, textAlign: "center", width: "100%" }}>
+      <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 clamp(20px, 5vw, 48px)", position: "relative", zIndex: 10, textAlign: "center", width: "100%" }}>
         <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.1 }}
           style={{ fontSize: "clamp(40px, 7vw, 80px)", fontWeight: 700, lineHeight: 1.1, marginBottom: 24 }}>
           Your Competitors Already Have This.<br />

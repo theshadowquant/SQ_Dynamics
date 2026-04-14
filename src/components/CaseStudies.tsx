@@ -8,8 +8,8 @@ const cases = [
 
 export default function CaseStudies() {
   return (
-    <section style={{ padding: "96px 0", position: "relative", zIndex: 10 }}>
-      <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 48px", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 24 }}>
+    <section style={{ padding: "clamp(64px, 10vw, 96px) 0", position: "relative", zIndex: 10 }}>
+      <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 clamp(20px, 5vw, 48px)", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 24 }}>
         {cases.map((c, i) => (
           <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: i * 0.1 }}
             className="glass-panel glass-panel-hover" style={{ padding: 32, borderRadius: 16, display: "flex", flexDirection: "column" }}>
