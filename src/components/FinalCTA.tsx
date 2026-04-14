@@ -19,15 +19,36 @@ export default function FinalCTA() {
                  style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "20px 40px", borderRadius: 8, background: "#0B0B0F", color: "#fff", fontWeight: 700, fontSize: 18, textDecoration: "none", border: "1px solid rgba(255,255,255,0.1)" }}>
                 ✉️ shadowquantdynamics@gmail.com
               </a>
-              <div style={{ display: "flex", gap: 16, flexWrap: "wrap", justifyContent: "center" }}>
-                <a href="https://wa.me/917676309842?text=Hi%20ShadowQuant%20team!%20I'd%20like%20to%20discuss%20building%20a%20premium%20digital%20system%20for%20my%20business." target="_blank" rel="noopener noreferrer" className="btn-glow"
-                   style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "16px 24px", borderRadius: 8, background: "rgba(37,99,235,0.1)", color: "#fff", fontWeight: 600, fontSize: 16, textDecoration: "none", border: "1px solid rgba(59,130,246,0.3)" }}>
-                  📞 +91 76763 09842 (Lekhan)
-                </a>
-                <a href="https://wa.me/918904545195?text=Hi%20ShadowQuant%20team!%20I'd%20like%20to%20discuss%20building%20a%20premium%20digital%20system%20for%20my%20business." target="_blank" rel="noopener noreferrer" className="btn-glow"
-                   style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "16px 24px", borderRadius: 8, background: "rgba(37,99,235,0.1)", color: "#fff", fontWeight: 600, fontSize: 16, textDecoration: "none", border: "1px solid rgba(59,130,246,0.3)" }}>
-                  📞 +91 89045 45195 (Varun)
-                </a>
+              <div style={{ display: "flex", gap: 32, flexWrap: "wrap", justifyContent: "center", width: "100%" }}>
+                {/* Lekhan Controls */}
+                <div style={{ display: "flex", flexDirection: "column", gap: 8, alignItems: "center" }}>
+                  <div style={{ fontSize: 13, color: "#9CA3AF", fontWeight: 700, textTransform: "uppercase", letterSpacing: 1 }}>Lekhan (+91 76763 09842)</div>
+                  <div style={{ display: "flex", gap: 8 }}>
+                    <a href="https://wa.me/917676309842?text=Hi%20ShadowQuant%20team!%20I'd%20like%20to%20discuss%20building%20a%20premium%20digital%20system%20for%20my%20business." target="_blank" rel="noopener noreferrer" className="btn-glow"
+                      style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "12px 20px", borderRadius: 8, background: "rgba(37,99,235,0.1)", color: "#fff", fontWeight: 600, fontSize: 15, textDecoration: "none", border: "1px solid rgba(59,130,246,0.3)" }}>
+                      💬 WhatsApp
+                    </a>
+                    <a href="tel:+917676309842" className="btn-glow"
+                      style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "12px 20px", borderRadius: 8, background: "rgba(16,185,129,0.1)", color: "#fff", fontWeight: 600, fontSize: 15, textDecoration: "none", border: "1px solid rgba(16,185,129,0.3)" }}>
+                      📞 Call
+                    </a>
+                  </div>
+                </div>
+
+                {/* Varun Controls */}
+                <div style={{ display: "flex", flexDirection: "column", gap: 8, alignItems: "center" }}>
+                  <div style={{ fontSize: 13, color: "#9CA3AF", fontWeight: 700, textTransform: "uppercase", letterSpacing: 1 }}>Varun (+91 89045 45195)</div>
+                  <div style={{ display: "flex", gap: 8 }}>
+                    <a href="https://wa.me/918904545195?text=Hi%20ShadowQuant%20team!%20I'd%20like%20to%20discuss%20building%20a%20premium%20digital%20system%20for%20my%20business." target="_blank" rel="noopener noreferrer" className="btn-glow"
+                      style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "12px 20px", borderRadius: 8, background: "rgba(37,99,235,0.1)", color: "#fff", fontWeight: 600, fontSize: 15, textDecoration: "none", border: "1px solid rgba(59,130,246,0.3)" }}>
+                      💬 WhatsApp
+                    </a>
+                    <a href="tel:+918904545195" className="btn-glow"
+                      style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "12px 20px", borderRadius: 8, background: "rgba(16,185,129,0.1)", color: "#fff", fontWeight: 600, fontSize: 15, textDecoration: "none", border: "1px solid rgba(16,185,129,0.3)" }}>
+                      📞 Call
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
