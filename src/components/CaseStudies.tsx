@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 
 const cases = [
-  { type: "D2C Apparel Brand", problem: "Low visitor-to-buyer conversion.", r1: "312% ROAS improvement", r2: "4.2x checkout conversion." },
-  { type: "SaaS Startup", problem: "No product-market fit signaling.", r1: "89% increase in trial signups", r2: "2.1s load time achieved." },
-  { type: "Local Service Business", problem: "Zero digital presence.", r1: "67 qualified leads/month", r2: "#1 local rankings." },
+  { type: "Premium GYM", problem: "Low visibility and suboptimal online conversion.", r1: "3x Increase", r2: "Trial pass claims." },
+  { type: "Premium SCHOOL", problem: "Outdated digital map leading to disjointed communications.", r1: "85% Boost", r2: "In online inquiries." },
+  { type: "ONLINE ART SCH.", problem: "Poor course discoverability and drop-offs.", r1: "150+ Students", r2: "Enrolled in 60 days." },
 ];
 
 export default function CaseStudies() {

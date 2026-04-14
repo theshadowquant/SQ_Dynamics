@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 
 const projects = [
-  { name: "RevThread", type: "D2C Fashion", problem: "1.2% store conversion.", solution: "Full funnel redesign + checkout optimization.", result: "4.7x conversion rate, $180K additional revenue in 90 days." },
-  { name: "Launchly", type: "SaaS", problem: "Trial-to-paid was 6%.", solution: "Onboarding flow + feature spotlight redesign.", result: "23% trial-to-paid rate, 3x MRR growth." },
-  { name: "Apex Fitness", type: "Local Brand", problem: "No digital footprint.", solution: "Brand identity + site + local SEO system.", result: "94 booked appointments in month 1." },
-  { name: "Nexus Automate", type: "B2B SaaS", problem: "40% manual ops overhead.", solution: "Custom CRM + workflow automation.", result: "40% ops cost reduction, 6-month ROI." },
+  { name: "Strength Arena", type: "Premium GYM", problem: "Low visibility and suboptimal online conversion.", solution: "Immersive visual design + streamlined conversion funnel.", result: "High conversion of trial pass claims.", link: "https://sq-strength-arena.vercel.app" },
+  { name: "Thaiba Greenways", type: "Premium SCHOOL", problem: "Outdated digital map leading to disjointed communications.", solution: "Modern infrastructure with clean, fast UI.", result: "Huge increase in online inquiries.", link: "https://thaibagreenwayshrr.org" },
+  { name: "Anusha Art Classes", type: "ONLINE ART SCH.", problem: "Poor course discoverability and drop-offs.", solution: "Centralized course platform + high-converting landing pages.", result: "Consistent growth in student enrollments.", link: "https://aoac-website.vercel.app/" },
+  { name: "MP68 Chipswala", type: "Premium BUSINESS", problem: "Lack of digital visibility and direct sales channel.", solution: "Robust online catalog + localized organic optimization.", result: "Expanded brand reach and sales pipeline.", link: "https://mp68chipswala.vercel.app/" },
 ];
 
 export default function Portfolio() {
@@ -17,8 +17,8 @@ export default function Portfolio() {
         </motion.div>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: 32 }}>
           {projects.map((p, i) => (
-            <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: i * 0.1 }}
-              className="glass-panel" style={{ borderRadius: 16, overflow: "hidden", border: "1px solid rgba(255,255,255,0.1)" }}>
+            <motion.a key={i} href={p.link} target="_blank" rel="noopener noreferrer" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: i * 0.1 }}
+              className="glass-panel glass-panel-hover" style={{ display: "block", textDecoration: "none", color: "inherit", borderRadius: 16, overflow: "hidden", border: "1px solid rgba(255,255,255,0.1)" }}>
               <div style={{ padding: "32px 32px 0" }}>
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 24 }}>
                   <h3 style={{ fontSize: 22, fontWeight: 700, fontFamily: "'Space Grotesk', sans-serif" }}>{p.name}</h3>
@@ -32,7 +32,7 @@ export default function Portfolio() {
               <div style={{ background: "linear-gradient(to right, rgba(30,64,175,0.2), rgba(88,28,135,0.2))", padding: 32, borderTop: "1px solid rgba(255,255,255,0.05)" }}>
                 <p style={{ fontSize: 13 }}><span style={{ fontSize: 10, fontWeight: 700, color: "#60A5FA", textTransform: "uppercase", marginRight: 8 }}>Result:</span><span style={{ color: "#fff", fontWeight: 500 }}>{p.result}</span></p>
               </div>
-            </motion.div>
+            </motion.a>
           ))}
         </div>
       </div>
