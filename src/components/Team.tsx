@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 
 const team = [
-  { name: "LEKHAN V T", role: "Founder", desc: "Highly trained engineering student. The architect behind our digital systems, turning complex problems into scalable code." },
-  { name: "S M VARUN", role: "Co-Founder", desc: "Skilled engineering student and performance obsessive. He ensures every product we ship is incredibly fast and optimized." },
-  { name: "DARSHAN MAHAVEER MANG", role: "Co-Founder", desc: "Highly skilled engineering student. An automation-first thinker who eliminates operational bottlenecks with pure logic." },
+  { name: "LEKHAN V T", role: "Founder", desc: "Highly trained engineering student. The architect behind our digital systems, turning complex problems into scalable code.", img: "/images/Lekhan.png" },
+  { name: "S M VARUN", role: "Co-Founder", desc: "Skilled engineering student and performance obsessive. He ensures every product we ship is incredibly fast and optimized.", img: "/images/Varun.jpg" },
+  { name: "DARSHAN MAHAVEER MANG", role: "Co-Founder", desc: "Highly skilled engineering student. An automation-first thinker who eliminates operational bottlenecks with pure logic.", img: "/images/Darshan.png" },
 ];
 
 export default function Team() {
@@ -18,8 +18,8 @@ export default function Team() {
           {team.map((m, i) => (
             <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: i * 0.1 }}
               className="glass-panel glass-panel-hover" style={{ padding: 32, borderRadius: 16, textAlign: "center" }}>
-              <div style={{ width: 96, height: 96, borderRadius: "50%", background: "linear-gradient(135deg, #1F2937, #111827)", border: "1px solid rgba(255,255,255,0.1)", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 24px", fontSize: 28, fontWeight: 700, color: "#4B5563", fontFamily: "'Space Grotesk', sans-serif" }}>
-                {m.name.charAt(0)}
+              <div style={{ width: 96, height: 96, borderRadius: "50%", background: "linear-gradient(135deg, #1F2937, #111827)", border: "1px solid rgba(255,255,255,0.1)", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 24px", fontSize: 28, fontWeight: 700, color: "#4B5563", fontFamily: "'Space Grotesk', sans-serif", overflow: "hidden" }}>
+                <img src={m.img} alt={m.name} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
               </div>
               <h3 style={{ fontSize: 17, fontWeight: 700, fontFamily: "'Space Grotesk', sans-serif", letterSpacing: 1, marginBottom: 4 }}>{m.name}</h3>
               <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: 3, color: "#60A5FA", textTransform: "uppercase", marginBottom: 16 }}>{m.role}</div>
